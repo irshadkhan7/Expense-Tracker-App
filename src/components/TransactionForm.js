@@ -15,15 +15,12 @@ const [nameValue, setNameValue] = useState('');
 const [amountValue, setAmountValue] = useState('');
 
 
+
 const [modal, setmodal] = useState(false);
 
 const [modalnew, setmodalnew] = useState(false);
 
-
-
-
   /******************* manage Transaction data*****************/
-
 
 const addTransaction = (type, evt) => {
   evt.preventDefault();
@@ -44,7 +41,6 @@ const addTransaction = (type, evt) => {
 
       // alert(" Successfull")
        
- 
       if(nameValue && amountValue,amountValue ){
           
         alert(" Successfull")
@@ -68,7 +64,7 @@ const addTransaction = (type, evt) => {
       {/* <h2>Add New Transcation</h2>          onSubmit={handleSubmitAddTransaction}*/}
       <div >
         <from onSubmit={handleSubmitAddTransaction} >
-        <Modal size="lg" isOpen={modal} toggle={() => setmodal(!modal)}>
+        <Modal size="lg" isOpen={modal} toggle={() => setmodal(!modal)} className="modal-css">
           <ModalHeader toggle={() => setmodal(!modal)} >Add Amount.......KGN</ModalHeader> 
           <ModalBody>
             <form >
@@ -144,7 +140,7 @@ const addTransaction = (type, evt) => {
 
         <form>
         <div className="fist-btn">
-            <input  type="text"   placeholder="search"/>
+            <input  type="text "placeholder="search"/>
           <button>All Expenses</button>
           <button><LocalPizzaIcon />Food And Drink </button>
           <button><ShoppingBagIcon/> Grocery </button>

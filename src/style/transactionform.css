@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 form{
     display: flex;
     justify-content: center;
@@ -64,11 +65,7 @@ form .income-btn button{
     margin-top: 15px;
 }
 
-/* .income-btn{
-    margin-top: -70px;
-    float: right;
-    
-} */
+
 
 .income-btn button{
     width: 150px;
@@ -124,73 +121,97 @@ label h3{
 
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
 
-    body{
-        width: 100%;
-    }
+    
+
     form{
-width: 1140px;
+          width: 100vw;
+          margin-left: -1rem;
     }
     form .fist-btn{
-        
-        display: flex;
+        box-sizing: border-box;
+        display: inline-block;
         justify-content: space-around;
-        /* align-items: center; */
         flex-wrap: wrap;
     }
 
     form .fist-btn input {
-       width: 290px;
-       height: 60px;
-       font-size: 40px;
+       width: 300px;
+       height: 45px;
+       font-size: 24px;
        background-color: rgb(255, 248, 248);
+       margin-right: 1.2rem;
        
     }
     form .fist-btn button{
-      width: 250px;
-      height: 60px;
-     display: flex;
+      width: 300px;
+      height: 50px;
+     /* display: inline-block; */
      flex-wrap: wrap;
      justify-content: center;
      padding: 10px;
      margin-top: 20px;
-     font-size: 25px;
+     font-size: 15px;
      align-items: center;
      gap: 5px;
-     /* padding: 3px ; */
-color: black;
-/* padding: 4px 8px; */
+      color: black;
+      margin-left: 0rem;
 
-     /* flex-direction: ;    */
     }
     .iincome-btn{
-        width: 405px;
+        width: 200px;
         height: 50px;
-        margin-left: 742px;
-        margin-top: -80px;
+       display: inline-block;
+       margin-top: 1rem;
+       margin-left:30px;
+       margin-bottom: 5rem;
     }
     .iincome-btn button{
-        width: 400px;
-        height: 80px;
-        font-size: 25px;
+        width: 300px;
+        height: 45px;
+        font-size: 17px;
+    
         /* background-color: aqua; */
     }
+    .income-btn button{
+        width: 300px;
+        height: 50px;
+        background-color: rgb(58, 86, 248);
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 20px;
+        outline: none;
+    } 
+    
+    /* no popup button */
+    
+    label .placeholder-btn p {
+        color: red;
+        justify-content: center;
+        margin-top: 3px;
+        margin-left: -3rem;
+        font-size: 0.6rem;
+    }
+    
   
 
 label h3{
-font-size: 30px;
-margin-right: 680px;
+font-size: 20px;
+margin-right: 74px;
 /* text-align: center; */
 }
 label  p{
  font-size: 20px;
-margin-right: 600px;
+/* margin-right: 600px; */
     }
 label .placeholder-btn input{
-    height: 100px;
-    width: 800px;
+   height: 40px;
+   width: 100px;
+   font-size: 1rem;
 }
+
 
     label input{
       font-size: 40px;  
@@ -198,9 +219,9 @@ label .placeholder-btn input{
     }
 
     form .income-btn button{
-        width: 400px;
-        height: 90px;
-        font-size: 50px;
+        width: 210px;
+        height: 45px;
+        font-size: 20px;
     }
     form .iincome-btn button{
         width: 400px;
@@ -208,9 +229,9 @@ label .placeholder-btn input{
         font-size: 40px;
         font-size: 50px;
 
-    }
+    } 
    .modal-title{
-font-size: 32px;
+      font-size: 1rempx;
     }
 
 }

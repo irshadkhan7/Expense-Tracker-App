@@ -7,7 +7,6 @@ function TransactionHistory({ transactions, onDeleteTransaction,}) {
   return (
     <>
       <div> 
-        <h2>TranscationHistory</h2>
         <ul>
           {transactions.map((data,index ) => (
             <li key={data.id }>

@@ -9,6 +9,8 @@ ul li{
     gap: 240px;
     font-size: 27px;
     padding: 4px 5px;
+    margin-top: 2rem;
+    width: 93vw;
 
 }
 ul li button{
@@ -32,49 +34,38 @@ a{
     padding: 5px 5px;
 }
 
-@media only screen and (max-width: 700px){
-    
-    body{
-        width: 100%;
-    }
-   div h2{
-        margin-top: 30px;
-        font-size: 50px;
-    }
+@media only screen and (min-width: 320px) and (max-width: 767px){
 
-    div ul {
+    ul li{
+        border: 1px solid black;
+        display: inline-block;
+        justify-content: center;
+        gap: 240px;
+        font-size: 27px;
+        padding: 4px 5px;
+        margin-top: 2rem;
+        width: 85vw;
     
-        margin-top: 50px;
-        width: 1160px;
-        padding: 5px 10px;
-        /* height: 400px; */
-    }
-    div ul li{
-        height: 100px;
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
     ul li button{
-        width: 231px;
-        font-size: 38px;
-        height: 70px;
         text-align: center;
-        align-items: center;
-        /* background-color: rebeccapurple; */
+        display: inline-block;
+        width: 128px;
+        height: 42px;
+        font-size: 19px;
+        background-color: #F5F5F5;
+        padding: 8px 8px;
+        border-radius: 15px;
     }
-    ul li button .btn-edit{
-width: 600px;
-height: 80px;
-font-size: 50px;
+    ul li button:hover{
+        background-color: white;
     }
-     ul li td{
-        font-size: 35px;
-        width: 200px;
-
+    ul li button .btn-edit td{
+        margin-right: -180;
     }
-     a{
-        font-size: 60px;
+    a{
+        font-size: 20px;
+        margin-top: 2rem;
     }
+    
 }
